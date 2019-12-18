@@ -5,7 +5,8 @@
         public int ID { get; set; }
         public string Name { get; set; }
         public string Description { get; set; }
-        public CheeseType Type { get; set; }
-        
+        public CheeseCategory Category { get; set; }
+        public int CategoryID { get; set; }
+
     }
 }

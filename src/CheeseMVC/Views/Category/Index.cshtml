@@ -5,11 +5,14 @@
 @{
 }
 
+    <h1>@ViewBag.Title</h1>
+
 @foreach(var cat in Model)
 {
     <ul>
-        <p><a asp-controller="Category" asp-action="Add">Add Category</a></p>
+        
         <li>@cat.Name</li>
-        <li>@cat.ID</li>
     </ul>
 }
+
+<p><a asp-controller="Category" asp-action="Add">Add Category</a></p>
